@@ -20,3 +20,14 @@
 
 let pica = [12, "Anna", 37, "Maksim", 9, "Sam", 45, "Ron"]
 pica.forEach(i => console.log(`${i} - ${typeof i} value`));
+
+// Задание 2
+// Вывести какой день недели бýло 4 марта 2000 года
+let dat = new Date(2000, 2, 4, 0, 0, 0, 0);
+console.log(dat);
+
+
+// Задание 1
+// Создать дату 18 декабря 2019 года, 12 часов, 20 минут
+let date1 = new Date(2019, 11, 18, 12, 20, 0, 0);
+console.log(date1);
