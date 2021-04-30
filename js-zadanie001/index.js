@@ -31,3 +31,20 @@ console.log(dat);
 // Создать дату 18 декабря 2019 года, 12 часов, 20 минут
 let date1 = new Date(2019, 11, 18, 12, 20, 0, 0);
 console.log(date1);
+
+
+let maxDate = new Date(1590749435756);
+let isoDate = maxDate.toISOString(); 
+isoDate.substr(0, 10);
+
+
+function toISODate(milliseconds) {
+    let date = new Date(milliseconds);
+    let y = date.getFullYear()
+    let m = date.getMonth() + 1;
+    let d = date.getDate();
+    m = (m < 10) ? '0' + m : m;
+    d = (d < 10) ? '0' + d : d;
+    return [y, m, d].join('-');
+}
+console.log(maxDate);
