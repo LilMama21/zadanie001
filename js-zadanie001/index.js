@@ -36,15 +36,4 @@ console.log(date1);
 let maxDate = new Date(1590749435756);
 let isoDate = maxDate.toISOString(); 
 isoDate.substr(0, 10);
-
-
-function toISODate(milliseconds) {
-    let date = new Date(milliseconds);
-    let y = date.getFullYear()
-    let m = date.getMonth() + 1;
-    let d = date.getDate();
-    m = (m < 10) ? '0' + m : m;
-    d = (d < 10) ? '0' + d : d;
-    return [y, m, d].join('-');
-}
 console.log(maxDate);
